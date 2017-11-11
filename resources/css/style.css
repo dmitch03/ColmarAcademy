@@ -46,8 +46,8 @@ header {
   width: 97%;
   top: 0;
   padding: 0 1.5rem;
-  background-color: white;
-  border-bottom: 1px solid lightgray;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 .logo {
@@ -64,7 +64,7 @@ header {
 }
 
 .logo span {
-  color: lightgray;
+  color: rgb(216, 216, 216);
 }
 
 nav {
@@ -74,8 +74,7 @@ nav {
 }
 
 .nav span a {
-  display: inline;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
   text-decoration: none;
@@ -89,7 +88,7 @@ nav {
   align-items: center;
   position: relative;
   top: 4rem;
-  background-color: lightgray;
+  background-color: rgb(216, 216, 216);
   width: 100%;
 }
 
@@ -128,6 +127,11 @@ nav {
   width: 85%;
   text-align: center;
   background-color: rgb(60, 60, 60);
+  transition: all 1s ease-in-out 0.25s;
+}
+
+.start-button:hover {
+  background-color: rgb(74, 143, 225);
 }
 
 .start-button a {
@@ -135,6 +139,12 @@ nav {
     color: white;
     font-size: 2rem;
     font-weight: 500;
+    transition: all 1s ease-in-out 0.25s;
+}
+
+.start-button a:hover {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 /*Articles Section*/
@@ -174,15 +184,23 @@ nav {
   display: flex;
   flex-direction: column;
   width: 40%;
+  border-left: 1px solid rgb(216, 216, 216);
+}
+
+.articles .side-articles {
   padding-top: 1rem;
-  border-left: 1px solid lightgray;
 }
 
 .side-article {
   display: flex;
   align-items: center;
   margin: 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  transition: background-color 1s ease-in-out 0s;
+}
+
+.side-article:hover {
+  background-color: rgb(216, 216, 216);
 }
 
 .desktop-image {
@@ -218,9 +236,9 @@ nav {
   line-height: 1.5;
 }
 
-.side-text a {
+.side-text p a {
   text-decoration: none;
-  color: slateblue;
+  color: rgb(74, 143, 225);
 }
 
 /*Start Learning Section*/
@@ -230,7 +248,7 @@ nav {
   display: block;
   padding: 0 4.5rem;
   text-align: center;
-  background-color: lightgray;
+  background-color: rgb(216, 216, 216);
 }
 
 .start-learning h1 {
@@ -305,7 +323,7 @@ nav {
 
 .thesis-video video {
   width: 100%;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(216, 216, 216);
 }
 
 .video-text {
@@ -324,4 +342,31 @@ nav {
   padding: 0.5rem 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.side-text h2 a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
+.side-text h2 a:hover {
+  color: rgb(74, 143, 225);
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid rgb(216, 216, 216);
+}
+
+.footer-right span {
+  padding-left: 1.5rem;
+}
+
+.footer-right span a {
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+  text-decoration: none;
 }
