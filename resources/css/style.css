@@ -138,6 +138,7 @@ nav {
 }
 
 /*Articles Section*/
+
 .articles {
   display: flex;
   width: 100%;
@@ -151,6 +152,10 @@ nav {
 
 .main-article img {
   width: 100%;
+}
+
+.quote-text {
+  color: rgb(60, 60, 60);
 }
 
 .quote-text h1 {
@@ -197,4 +202,126 @@ nav {
 
 .side-text {
   width: 65%;
+  padding-right: 1rem;
+}
+
+.side-text h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: rgb(60, 60, 60);
+}
+
+.side-text p {
+  font-size: 1.25rem;
+  color: rgb(60, 60, 60);
+  padding-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.side-text a {
+  text-decoration: none;
+  color: slateblue;
+}
+
+/*Start Learning Section*/
+
+.start-learning {
+  display: flex;
+  display: block;
+  padding: 0 4.5rem;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.start-learning h1 {
+  font-size: 3rem;
+  padding-top: 2rem;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+}
+
+.study-areas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.course {
+  width: 31.5%;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course-text {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-text h5 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: rgb(60, 60, 60);
+}
+
+.course-text p {
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
+  line-height: 1.5;
+  color: rgb(60, 60, 60);
+}
+
+/*Thesis Section*/
+
+.thesis-exhibit {
+  display: flex;
+  display: block;
+  width: 100%;
+}
+
+.thesis-exhibit h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 2rem;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+}
+
+.thesis-articles {
+  display: flex;
+  padding-top: 2rem;
+  color: rgb(60, 60, 60);
+}
+
+.thesis-video {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+.thesis-video video {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+.video-text {
+  display: block;
+  padding: 1.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.thesis-video h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.thesis-video p {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
