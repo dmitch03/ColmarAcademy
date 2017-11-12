@@ -398,6 +398,10 @@ footer {
   text-decoration: none;
 }
 
+.footer-right span a:hover {
+  color: rgb(74, 143, 225);
+}
+
 /*Media Queries*/
 
 @media only screen and (max-width: 720px) {
