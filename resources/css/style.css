@@ -80,15 +80,19 @@ header .desktop {
   color: rgb(216, 216, 216);
 }
 
-.desktop .nav {
+.desktop nav {
   padding-right: 1.5rem;
 }
 
-.nav span a {
+nav span a {
   padding-left: 1.5rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
   text-decoration: none;
+}
+
+nav span a:hover {
+  color: rgb(74, 143, 225);
 }
 
 /*Main Content*/
@@ -120,7 +124,7 @@ header .desktop {
 }
 
 .start-text h1 {
-  font-size: 3vw;
+  font-size: 3.5vw;
   padding-top: 2rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
@@ -140,7 +144,7 @@ header .desktop {
   width: 85%;
   text-align: center;
   background-color: rgb(60, 60, 60);
-  transition: all 1s ease-in-out 0.25s;
+  transition: all 1s linear 0.15s;
 }
 
 .start-button:hover {
@@ -152,7 +156,7 @@ header .desktop {
     color: white;
     font-size: 1.5vw;
     font-weight: 500;
-    transition: all 1s ease-in-out 0.25s;
+    transition: all 1s linear 0.15s;
 }
 
 .start-button a:hover {
@@ -193,6 +197,11 @@ header .desktop {
   line-height: 1.75;
 }
 
+.quote-text p {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
 .side-articles { /*Side Article rules apply in the Thesis section as well*/
   display: flex;
   flex-direction: column;
@@ -209,7 +218,7 @@ header .desktop {
   align-items: center;
   margin: 0;
   border-bottom: 1px solid rgb(216, 216, 216);
-  transition: background-color 1s ease-in-out 0s;
+  transition: background-color 1s linear 0s;
 }
 
 .side-article:hover {
@@ -234,8 +243,17 @@ header .desktop {
 
 .side-text h2 {
   font-size: 2vw;
-  font-weight: 500;
+  font-weight: 700;
   color: rgb(60, 60, 60);
+}
+
+.side-text h2 a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
+.side-text h2 a:hover {
+  color: rgb(74, 143, 225);
 }
 
 .side-text p {
@@ -292,7 +310,7 @@ header .desktop {
 
 .course-text h5 {
   font-size: 2vw;
-  font-weight: 500;
+  font-weight: 700;
   color: rgb(60, 60, 60);
 }
 
@@ -301,6 +319,15 @@ header .desktop {
   padding-top: 0.5rem;
   line-height: 1.5;
   color: rgb(60, 60, 60);
+}
+
+.course-text a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+
+.course-text a:hover {
+  color: rgb(74, 143, 225);
 }
 
 /*Thesis Section*/
@@ -353,15 +380,6 @@ header .desktop {
   line-height: 1.75;
 }
 
-.side-text h2 a {
-  text-decoration: none;
-  color: rgb(60, 60, 60);
-}
-
-.side-text h2 a:hover {
-  color: rgb(74, 143, 225);
-}
-
 /*Footer*/
 footer {
   display: flex;
@@ -406,7 +424,7 @@ footer {
   display: none;
 }
 
-header .mobile {
+nav .mobile {
   width: 100%;
 }
 
@@ -420,6 +438,10 @@ header .mobile {
 
 .mobile-nav img {
   height: 2.75rem;
+}
+
+nav span a {
+  padding: 0;
 }
 
 .start-banner {
@@ -510,7 +532,7 @@ header .mobile {
 .learning-mobile a {
   text-decoration: none;
   color: rgb(60, 60, 60);
-  transition: all 1s ease-in-out 0s;
+  transition: all 0.5s linear 0s;
 }
 
 .learning-mobile a:hover {
@@ -523,7 +545,7 @@ header .mobile {
   font-size: 6vw;
   font-weight: 700;
   background-color: rgb(216, 216, 216);
-  transition: all 1s ease-in-out 0s;
+  transition: all 0.5s linear 0s;
 }
 
 .learning-mobile h5:hover {
