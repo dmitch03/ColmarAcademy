@@ -7,7 +7,16 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.3;
-  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-image {
+  display: none;
 }
 
 @font-face {
@@ -43,17 +52,21 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  width: 97%;
+  width: 100%;
   top: 0;
-  padding: 0 1.5rem;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+header .desktop {
+  justify-content: space-between;
 }
 
 .logo {
   display: flex;
   align-items: center;
   height: 2rem;
+  padding-left: 1.5rem;
   font-weight: 700;
   font-size: 1.25rem;
   color: rgb(60, 60, 60)
@@ -67,10 +80,8 @@ header {
   color: rgb(216, 216, 216);
 }
 
-nav {
-  display: flex;
-  text-align: right;
-  flex-grow: 1;
+.desktop .nav {
+  padding-right: 1.5rem;
 }
 
 .nav span a {
@@ -81,6 +92,7 @@ nav {
 }
 
 /*Main Content*/
+
 /*Start Banner Section*/
 
 .start-banner {
@@ -108,14 +120,15 @@ nav {
 }
 
 .start-text h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   padding-top: 2rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
 }
 
 .start-text h2 {
-  font-size: 2rem;
+  font-size: 2.5vw;
+  line-height: 1.75;
   padding: 1.5rem 0;
   font-weight: 500;
   color: rgb(60, 60, 60);
@@ -123,7 +136,7 @@ nav {
 
 .start-button {
   padding: 0.5rem 0;
-  margin: 2rem 0;
+  margin: 1rem 0;
   width: 85%;
   text-align: center;
   background-color: rgb(60, 60, 60);
@@ -137,13 +150,13 @@ nav {
 .start-button a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5vw;
     font-weight: 500;
     transition: all 1s ease-in-out 0.25s;
 }
 
 .start-button a:hover {
-  font-size: 3rem;
+  font-size: 2.5vw;
   font-weight: 900;
 }
 
@@ -170,17 +183,17 @@ nav {
 
 .quote-text h1 {
   padding-top: 2rem;
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 700;
 }
 
 .quote-text h3 {
   padding: 1.5rem 0;
-  font-size: 1.25rem;
+  font-size: 1.5vw;
   line-height: 1.75;
 }
 
-.side-articles {
+.side-articles { /*Side Article rules apply in the Thesis section as well*/
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -214,23 +227,19 @@ nav {
   width: 100%;
 }
 
-.mobile-image {
-  display: none;
-}
-
 .side-text {
   width: 65%;
   padding-right: 1rem;
 }
 
 .side-text h2 {
-  font-size: 2.25rem;
+  font-size: 2vw;
   font-weight: 500;
   color: rgb(60, 60, 60);
 }
 
 .side-text p {
-  font-size: 1.25rem;
+  font-size: 1.25vw;
   color: rgb(60, 60, 60);
   padding-top: 0.5rem;
   line-height: 1.5;
@@ -252,7 +261,7 @@ nav {
 }
 
 .start-learning h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   padding-top: 2rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
@@ -282,13 +291,13 @@ nav {
 }
 
 .course-text h5 {
-  font-size: 1.75rem;
+  font-size: 2vw;
   font-weight: 500;
   color: rgb(60, 60, 60);
 }
 
 .course-text p {
-  font-size: 1.25rem;
+  font-size: 1.25vw;
   padding-top: 0.5rem;
   line-height: 1.5;
   color: rgb(60, 60, 60);
@@ -304,7 +313,7 @@ nav {
 
 .thesis-exhibit h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3vw;
   padding-top: 2rem;
   font-weight: 700;
   color: rgb(60, 60, 60);
@@ -329,19 +338,19 @@ nav {
 .video-text {
   display: block;
   padding: 1.5rem 0;
-  font-size: 1.25rem;
+  font-size: 2vw;
   line-height: 1.5;
 }
 
 .thesis-video h2 {
-  font-size: 1.75rem;
+  font-size: 3vw;
   font-weight: 700;
 }
 
 .thesis-video p {
   padding: 0.5rem 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.5vw;
+  line-height: 1.75;
 }
 
 .side-text h2 a {
@@ -369,4 +378,185 @@ footer {
   font-weight: 700;
   color: rgb(60, 60, 60);
   text-decoration: none;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 720px) {
+
+.mobile {
+  display: flex;
+}
+
+.mobile-image {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.mobile-image img {
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.desktop-image {
+  display: none;
+}
+
+header .mobile {
+  width: 100%;
+}
+
+.mobile-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1.5rem;
+}
+
+.mobile-nav img {
+  height: 2.75rem;
+}
+
+.start-banner {
+  flex-direction: column;
+  padding: 0;
+}
+
+.start-banner-img {
+  width: 100%;
+  padding: 0;
+}
+
+.start-text {
+  width: auto;
+  padding: 0rem 1rem;
+}
+
+.start-text h1 {
+  font-size: 8vw;
+}
+
+.start-text h2 {
+  padding-top: 2rem;
+  font-size: 4vw;
+}
+
+.start-button {
+  width: auto;
+  margin: 0 0 2rem 0;
+}
+
+.start-button a {
+  font-size: 4vw;
+}
+
+.start-button a:hover {
+  font-size: 6vw;
+}
+
+.main-article {
+  display: none;
+}
+
+.articles .side-articles {
+  width: 100%;
+  padding: 0;
+}
+
+.side-article {
+  flex-direction: column;
+  margin: 0rem 1rem;
+}
+
+.side-article:first-child {
+  margin-top: 1rem;
+}
+
+.side-article:not(:last-child) {
+  padding-bottom: 4rem;
+}
+
+.side-text {
+  width: 100%;
+  padding: 1rem 0rem 2rem 1rem;
+}
+
+.side-text h2 {
+  font-size: 6vw;
+}
+
+.side-text p {
+  font-size: 4vw;
+}
+
+.learning-mobile {
+  width: 100%;
+  color: rgb(60, 60, 60);
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.learning-mobile h1 {
+  padding: 2rem 0rem 1rem 0rem;
+  font-size: 8vw;
+  font-weight: 700;
+  text-align: center;
+}
+
+.learning-mobile a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+  transition: all 1s ease-in-out 0s;
+}
+
+.learning-mobile a:hover {
+  color: rgb(255, 255, 225);
+}
+
+.learning-mobile h5 {
+  padding: 1rem 0rem 1.5rem 1rem;
+  margin: 0 1.5rem 0.5rem 1.5rem;
+  font-size: 6vw;
+  font-weight: 700;
+  background-color: rgb(216, 216, 216);
+  transition: all 1s ease-in-out 0s;
+}
+
+.learning-mobile h5:hover {
+  background-color: rgb(74, 143, 225);
+}
+
+.learning-mobile h5:last-child {
+  margin-bottom: 2rem;
+}
+
+.thesis-exhibit h1 {
+  font-size: 8vw;
+}
+
+.thesis-video {
+  width: 100%;
+  padding: 0rem 0rem 1.5rem 0rem;
+}
+
+.video-text {
+  display: none;
+}
+
+.thesis-articles .side-articles {
+  display: none;
+}
+
+footer {
+  border: none;
+}
+
+.footer-right {
+  display: none;
+}
+
 }
